@@ -1,16 +1,24 @@
-body {
+.father {
     height: 100vh;
     display: flex;
-    flex-direction: column;
     /*Main Axis*/
-    justify-content:space-around;
+    justify-content:center;
     /*Cross Axis*/
     align-items: center;
 }
 
-.box{
+.child{
     background-color: peru;
-    width: 200px;
+    flex-basis: 200px;
     height: 200px;
     color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
+/*order 디폴트 값은 0 */
+
+.child:nth-child(2) {
+    background-color: black;
+}
+
