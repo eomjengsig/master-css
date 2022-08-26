@@ -1,0 +1,23 @@
+
+.grid {
+    display: grid;
+    gap :5px;
+}
+.item:nth-child(odd) {
+    background-color: tomato;
+}
+.item:nth-child(even) {
+    background-color: orchid;
+}
+.grid:first-child {
+    grid-template-columns: repeat(auto-fill, minmax(100px,1fr));
+    grid-template-rows: repeat(5, minmax(100px,1fr));
+
+}
+
+.grid:last-child {
+    grid-template-columns: repeat(auto-fit, minmax(100px,1fr));
+    grid-template-rows: repeat(5, minmax(100px,1fr));
+
+
+}
