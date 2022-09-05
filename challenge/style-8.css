@@ -1,0 +1,122 @@
+.box_big {
+  display: flex;
+  width: 980px;
+  height: 100vh;
+}
+.grid_left {
+  width: 600px;
+  height: 100vh;
+  display: grid;
+  grid-template-rows: repeat(6, 1fr);
+  background-color: #ff7400;
+}
+.box_left {
+  display: grid;
+  grid-template-columns: 30px 400px 170px;
+}
+.box_left_left {
+  writing-mode: vertical-lr;
+  font-size: 10px;
+  text-align: center;
+  transform: scale(-1);
+  color: #ff0300;
+  border: 1px solid #ff0300;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.box_left_mid {
+  font-size: 60px;
+  border: 1px solid #ff0300;
+  height: 100%;
+  width: 100%;
+  color: #ff0300;
+  display: flex;
+  align-items: center;
+}
+.box_left_right {
+  display: grid;
+  grid-template-rows: repeat(2, 1fr);
+}
+.box_left_right_text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #ff0300;
+  border: 1px solid #ff0300;
+}
+span {
+  text-align: center;
+}
+.text_box {
+  background-color: #f20400;
+  color: #ff7400;
+  display: block;
+  padding: 5px;
+  width: 120px;
+  border-radius: 15px;
+}
+.box_center {
+  width: 30px;
+  height: 100vh;
+  display: flex;
+  justify-content: space-evenly;
+  writing-mode: vertical-lr;
+  position: relative;
+}
+.box_center_1 {
+  background-color: #e900ea;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  padding-top: 5px;
+}
+i {
+  position: absolute;
+  font-size: 30px;
+}
+
+.box_center_2 {
+  background-color: #2600ff;
+  height: 100%;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  padding-top: 5px;
+  transform: scale(-1);
+}
+.grid_right {
+  width: 350px;
+  height: 100vh;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: 1fr repeat(6, 4fr);
+  background-color: #ff0300;
+}
+.box_right_top {
+  display: flex;
+  justify-content: space-between;
+  grid-column: 1 / span 2;
+}
+h6 {
+  margin: 3px;
+}
+h2 {
+  margin: 5px;
+  border-top: 1px solid black;
+}
+
+.white {
+  color: white;
+  border: 1px solid white;
+}
+
+.white_text_box {
+  background-color: white;
+}
+.icon_c {
+  text-orientation: sideways-right;
+  font-size: 20px;
+}
